@@ -1,13 +1,13 @@
 import ollama
 import numpy as np
 
-def gerar_embeddings(texto, modelo="llama3"):
+def gerar_embeddings(texto, modelo="llama3.2"):
     """
-    Gera embeddings para um texto usando Ollama com Llama3
+    Gera embeddings para um texto usando Ollama com Llama3.2
     
     Args:
         texto (str): Texto para gerar embeddings
-        modelo (str): Modelo a ser usado (padrão: 'llama3')
+        modelo (str): Modelo a ser usado (padrão: 'llama3.2')
     
     Returns:
         dict: Dicionário com embeddings e informações
@@ -32,7 +32,7 @@ def gerar_embeddings(texto, modelo="llama3"):
 
 if __name__ == "__main__":
     # Texto de exemplo
-    texto_exemplo = "Ollama é uma plataforma incrível para rodar LLMs localmente"
+    texto_exemplo = "Ollama se mostra como uma plataforma bem legal para rodar LLMs localmente"
     
     # Gerar embeddings
     resultado = gerar_embeddings(texto_exemplo)
